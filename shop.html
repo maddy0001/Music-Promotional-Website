@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Eminem-Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="navbar/navbarstyle.css" />
+    <link rel="icon" href="shop/shoplogo.png">
+    <style>
+      .navbar {
+        background-color: rgb(0, 112, 34);
+      }
+      body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+.container {
+  background-image: radial-gradient(white, orange);
+}
+.logo {
+  position: relative;
+  top: 7px;
+  padding: 12px;
+}
+.column {
+  display: flex;
+}
+.rows-2 {
+  flex-basis: 50%;
+}
+.rows-4 {
+  flex-basis: 25%;
+}
+
+.navlink {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.navlink li {
+  position: relative;
+  bottom: 5px;
+  display: inline-block;
+  margin-left: 40px;
+}
+.navlink li a {
+  color: grey;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.navlink li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.head-text {
+  margin-left: 100px;
+  position: relative;
+  align-self: center;
+  max-width: 3500px;
+}
+.products-link {
+  border-radius: 10px;
+  background-color: red;
+  height: 29px;
+  width: 150px;
+  border: none;
+}
+.contact {
+  margin: 50px;
+}
+.contact form input {
+  border-radius: 13px;
+  padding: 7px;
+  width: 60%;
+  height: 25px;
+  margin-bottom: 5px;
+  border: none;
+  background-color: #eeeee4;
+}
+#text {
+  background-image: url("./pics/images/user\ \(1\).png");
+  background-repeat: no-repeat;
+  background-position: 5px;
+  background-size: 18px 18px;
+  text-indent: 32px;
+}
+#comments {
+  background-image: url("./pics/images/comment.png");
+  background-size: 18px 18px;
+  text-indent: 32px;
+  background-repeat: no-repeat;
+  background-position: 5px 9px;
+  border-radius: 13px;
+  padding: 7px;
+  width: 60%;
+  height: 115px;
+  margin-bottom: 5px;
+  border: none;
+  background-color: #eeeee4;
+}
+#email {
+  background-image: url("./pics/images/email.png");
+  background-repeat: no-repeat;
+  background-position: 5px;
+  background-size: 18px 18px;
+  text-indent: 32px;
+}
+#submit {
+  color: white;
+  background-color: red;
+}
+.product {
+  text-align: center;
+  text-shadow: 1px 1px grey;
+}
+#line {
+  position: relative;
+  width: 120px;
+  height: 2px;
+  background-color: grey;
+  float: inline-end;
+}
+.rows-3 {
+  flex-basis: 33.33%;
+  margin: 50px;
+}
+.features{
+  margin: 12px;
+}
+.card {
+  margin-left: 15%;
+  width: 220px;
+  height: 270px;
+  background-image: radial-gradient(white, #eaeaea);
+  border-radius: 10px;
+}
+.card:hover {
+  overflow: hidden;
+}
+.card-image img {
+  padding: 10px;
+  margin-left: 12.5%;
+  width: 160px;
+  height: 270px;
+  transition: transform ease 1000ms;
+  overflow: hidden;
+}
+.card{
+  overflow: hidden;
+}
+.card-details {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-details div {
+  line-height: 22px;
+  position: relative;
+  left:  0px;
+}
+.inter-image {
+  color: black;
+  background-color: white;
+  padding: 2px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+  left: 50px;
+  width: 120px;
+  display: none;
+}
+.card-image img:hover {
+  overflow: hidden;
+  transform: scale(1.1);
+}
+.card-image img:hover + .inter-image {
+  display: block;
+}
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+}
+.column .rows-3 p {
+  color: white;
+  size: 22px;
+}
+footer {
+  margin-top: 30px;
+}
+.footer-link {
+  margin: 12px;
+  color: white;
+  font-size: 12px;
+  list-style-type: none;
+  text-indent: -46px;
+  font-weight: 200;
+}
+.footer-text {
+  color: white;
+  font-size: 12px;
+  font-weight: 200;
+}
+.logo-links li {
+  display: inline-block;
+  margin-left: 7px;
+}
+.logo-links li img {
+  background-color: white;
+}
+.logo-links li img:hover {
+  background-color: rgb(209, 209, 209);
+}
+.subs {
+  margin-top: 12px;
+  width: 120px;
+  background-color: white;
+  color: black;
+  height: 32px;
+  border-radius: 20px;
+}
+#form-email {
+  background-color: transparent;
+  border: none;
+  width: 200px;
+  border-bottom: 1px solid white;
+}
+.play {
+  flex: 1;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+}
+/* ---------------about--------------- */
+.about{
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  padding: 8px;
+  position: relative;
+  bottom: 25px;
+}
+.story-head{
+  padding-left: 23px;
+}
+.story-content-group{
+  padding: 0 23px;
+}
+.story-content{
+  color: rgb(172, 172, 172);
+  line-height: 22px;
+  font-weight: 100;
+}
+.story-mode{
+  border: 2px solid rgb(172, 172, 172);
+  width: 350px;
+  margin: 30px 100px;
+}
+.story-mode:hover
+{
+  overflow: hidden;
+}
+.story-mode img{
+  object-fit: cover;
+  width: 350px;
+  height: 400px;
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  
+  transition: transform ease 2000ms;
+}
+.story-mode img:hover{
+  transform: scale(1.1);
+}
+.product-links{
+  margin: 50px 20px;
+}
+.product-links a{
+  display: inline-block;
+  text-decoration: none; 
+  letter-spacing: 2px;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(158, 158, 158);
+  transition:  2000ms;
+}
+
+.product-links a::after {
+  content:'';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 1500ms; 
+}
+
+.product-links a:hover::after {
+  width: 100%;
+}
+.product-links a:hover{
+  color: black;
+}
+.product-left{
+  margin-left: 300px;
+}
+.product-icons button{
+  margin: 63px 7px;
+  width:140px;
+  height: auto;
+  background: transparent;
+  border: 1px solid black;
+}
+.product-icons button div{
+  display: inline-block;
+  letter-spacing: 2px;
+}
+.product-icons button img{
+  margin-left: 1px;
+}
+.product-icons button:hover{
+  background-color: orange;
+}
+.card-details{
+  margin: 23px 0px;
+}
+
+.footer-link a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin: 12px 35px;
+}
+    </style>
+  </head>
+  <body
+    bgcolor="black"
+    style="
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    "
+  >
+    <div class="navbar">
+      <div>
+        <a class="shopbutton" href="shop.html" target="_blank">SHOP</a>
+      </div>
+      <div>
+        <a class="lyricsbutton" href="lyrics.html">LYRICS</a>
+      </div>
+      <div>
+        <a class="eventsbutton" href="events.html">EVENTS</a>
+      </div>
+      <div>
+        <a class="videosbutton" href="videos.html">VIDEOS</a>
+      </div>
+      <div>
+        <a class="joinbutton" href="join.html">JOIN</a>
+      </div>
+      <div>
+        <center>
+          <a href="Home.html"
+            ><img
+              class="eminemlogo"
+              src="eminemlogo.png"
+              style="width: 175px"
+              alt="eminemlogo"
+          /></a>
+        </center>
+      </div>
+    </div>
+<!--<h1 style="text-align: center; color: white;">** THE PAGE IS UNDER MAINTAINENCE **</h1> -->
+    <!-- ------products----------- -->
+    <div class="features">
+        <div class="column">
+            <div class="rows-4">
+                <!-- -----product-1-------- -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./pics/remover/product-1_adobespark.png" alt="hello">
+                        <div class="inter-image">
+                            Red T-Shirt
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div>Men's Shirt</div>
+                    <div>$12.00</div>
+                </div>
+            </div>
+            <div class="rows-4">
+                <!-- --------------product-2---------------- -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./pics/remover/product-2_adobespark.png" alt="hello">
+                        <div class="inter-image">
+                            Balck Shoe
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div>Men's Shoe</div>
+                    <div>$112.00</div>
+                </div>
+            </div>
+            <div class="rows-4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./pics/remover/product-3_adobespark.png" alt="hello">
+                        <div class="inter-image">
+                            Men's Pant
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div>Men's Pant</div>
+                    <div>$112.00</div>
+                </div>
+            </div>
+            <div class="rows-4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./pics/remover/product-4_adobespark.png" alt="hello">
+                        <div class="inter-image">
+                            Black T-Shirt
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div>Men's T-Shirt</div>
+                    <div>$112.00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------------2nd coumn----------------- -->
+        <div class="column">
+            <div class="rows-4">
+                <!-- -----product-4-------- -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./pics/remover/product-5_adobespark.png" alt="hello">
+                        <div class="inter-image">
+                            White Shoe
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div>Men's Shoe</div>
+                    <div>$112.00</div>
+                </div>
+            </div>
+            <div class="rows-4">
+                <!-- --------------product-5---------------- -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./pics/remover/product-6_adobespark.png" alt="hello">
+                        <div class="inter-image">
+                            Black T-Shirt
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div>Men's T-Shirt</div>
+                    <div>$112.00</div>
+                </div>
+            </div>
+            <div class="rows-4">
+                <div class="card">
+                    <div class="card-image" class="card-image">
+                        <img id='image-card' src="./pics/remover/product-7_adobespark.png" alt="hello">
+                        <div class="inter-image">
+                            Shocks
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div>Shocks</div>
+                    <div>$112.00</div>
+                </div>
+            </div>
+            <div class="rows-4">
+                <div class="card">
+                    <div class="card-image" class="card-image">
+                        <img id='image-card' src="./pics/remover/product-12_adobespark.png" alt="hello">
+                        <div class="inter-image">
+                            Shocks
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div>Shocks</div>
+                    <div>$112.00</div>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------3rd coumn----------------- -->
+        <div class="column">
+            <div class="rows-4">
+                <!-- -----product-4-------- -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./pics/remover/product-8_adobespark.png" alt="hello">
+                        <div class="inter-image">
+                            White Shoe
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div>Men's Shoe</div>
+                    <div>$112.00</div>
+                </div>
+            </div>
+            <div class="rows-4">
+                <!-- --------------product-5---------------- -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./pics/remover/product-9_adobespark.png" alt="hello">
+                        <div class="inter-image">
+                            Black T-Shirt
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div>Men's T-Shirt</div>
+                    <div>$112.00</div>
+                </div>
+            </div>
+            <div class="rows-4">
+                <div class="card">
+                    <div class="card-image" class="card-image">
+                        <img id='image-card' src="./pics/remover/product-10_adobespark.png" alt="hello">
+                        <div class="inter-image">
+                            Shocks
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div>Shocks</div>
+                    <div>$112.00</div>
+                </div>
+            </div>
+            <div class="rows-4">
+                <div class="card">
+                    <div class="card-image" class="card-image">
+                        <img id='image-card' src="./pics/remover/product-11_adobespark.png" alt="hello">
+                        <div class="inter-image">
+                            Shocks
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div>Shocks</div>
+                    <div>$112.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------footer----------- -->
+    <footer>
+        <div class="column">
+            <div class="rows-3">
+                <p>Related Links</p>
+                <div class="footer-link">
+                    <a href="./index.html">Home</a>
+                    <a href="./product.html">Products</a>
+                    <a href="./about.html">About</a>
+                    <a href=""> Contact</a>
+                </div>
+            </div>
+            <div class="rows-3">
+                <p>Get in Touch</p>
+                <p class="footer-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit placeat magnam quia accusamus cum
+                    natus, ex
+                    at quae
+                    perspiciatis ea laudantium debitis corrupti ratione! Reprehenderit nobis voluptas fugit
+                    perspiciatis.
+                    Temporibus.
+                </p>
+                <ul class="logo-links">
+                    <li> <a href="https://www.instagram.com/" target="blank"><img src="./pics/remover/instagram.png"
+                                alt="" width="22px" height="22px" style="color: white;"></a> </li>
+                    <li><a href="https://www.pinterest.com/" target="blank"></a><img
+                            src="./pics/remover/pinterest-social-logo.png" alt="" width="22px" height="22px"></li>
+                    <li><a href="https://www.facebook.com/" target="blank"></a><img src="./pics/remover/facebook.png"
+                            alt="" width="22px" height="22px"></li>
+                </ul>
+            </div>
+            <div class="rows-3">
+                <p>NewsLetter</p>
+                <input type="email" name="email" id="form-email" placeholder="Email">
+                <input type="submit" value="Subscribe" class="subs">
+            </div>
+        </div>
+        <div class="play">
+            Get the app on <a href="https://play.google.com/store" target="blank"><img
+                    src="./pics/images/play-store.png" alt="" width="100px" height="30px"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
+  </body>
+</html>

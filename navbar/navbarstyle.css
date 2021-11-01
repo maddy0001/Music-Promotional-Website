@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: red;
+  position: relative;
+}
+.shopbutton,
+.lyricsbutton,
+.eventsbutton,
+.videosbutton,
+.joinbutton {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 3px 7px;
+  top: 50%;
+}
+
+.shopbutton {
+  margin-left: 1%;
+}
+.lyricsbutton {
+  margin-left: 5.6%;
+}
+.eventsbutton {
+  margin-left: 11%;
+}
+.videosbutton {
+  margin-left: 17%;
+}
+.joinbutton {
+  margin-left: 95%;
+}
+.lyricsbutton:hover,
+.shopbutton:hover,
+.eventsbutton:hover,
+.videosbutton:hover,
+.joinbutton:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+.eminemlogo {
+  top: 50%;
+  margin-top: 13px;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}

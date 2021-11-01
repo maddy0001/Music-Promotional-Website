@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.diskcolumn {
+  float: left;
+  width: 32.5%;
+  padding: 6px;
+  position: relative;
+}
+
+.diskrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.disktext {
+  position: absolute;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  bottom: 2px;
+}
+.diskcolumn:hover {
+  border-bottom: 7px solid blue;
+  transition-duration: 0.3s;
+}
+.formore {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 3px;
+  font-size: 15px;
+  background-color: transparent;
+  border: 3px solid;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+}
+.formore:hover {
+  padding: 3px;
+  color: rgb(255, 255, 255);
+  background-color: blue;
+  border: none;
+  transition-duration: 0.5s;
+}
